@@ -1,0 +1,990 @@
+/* COMMON CSS START */
+body{
+    background: #fee2e2;
+    /* background: linear-gradient(
+    to right,
+    #fbf2fc,
+    #e3f5f6 33%,
+    #f8f2fb 68%,
+    #daf6f5 100%
+  ); */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,a,p{
+    margin: 0;
+    padding: 0;
+    line-height: 0.8;
+}
+.common-title {
+    text-align: center;
+}
+
+.common-title h3 {
+  font-family: 'Yeseva One', cursive;
+    color: #0d052e;
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.common-title p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin-bottom: 58px;
+    color: #707070;
+    line-height: 24px;
+}
+
+/* COMMON CSS END */
+/* NAVBAR CSS START */
+.navbar {
+    padding-top: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .logo {
+    width: 180px;
+    /* border-radius: 10px; */
+  }
+  .navbar-expand-lg .navbar-nav .nav-item{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 0px;
+    padding-right: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    text-transform: capitalize;
+    transition: all linear 0.5s;
+    position: relative;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: #ef4e4e;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link:after{
+    content: '';
+    position: absolute;
+    bottom: -29px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #ef4e4e;
+    transform-origin:right;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover:after{
+    transform-origin:left;
+    transform: scaleX(1)
+}
+  .nav-btn a{
+      font-family: 'Montserrat', sans-serif;
+      border-radius: 0 25px;
+      padding: 20px 46px;
+      font-size: 16px;
+      border:  1px solid transparent;
+      background-image: linear-gradient(270deg,#ef4e4e,#e42a2a);
+      box-shadow: 2px 1000px 1px #fee2e2 inset;
+      color: #000;
+      font-weight: 500;
+      transition: all linear 0.5s;
+  
+  }
+  .nav-btn a:hover {
+    box-shadow: none;
+    color: white;
+  }
+  .nav-scroll {
+    background: #ffffff;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    padding: 10px 0;
+    animation: nav 1s;
+  }
+  
+  @keyframes nav {
+    from {
+      top: -100px;
+    }
+    to {
+      top: 0px;
+    }
+  }
+/* NAVBAR CSS END */
+
+/* BANNER CSS END */
+#banner {
+    padding-top: 250px;
+    padding-bottom: 100px;
+  }
+  .banner-col{
+    display:flex;
+    align-items: center;
+  }
+.banner-title h1{
+    font-family: 'Yeseva One', cursive;
+    font-size: 70px;
+    color: #0d052e;
+    font-weight: 600;
+    padding-bottom: 23px;
+    line-height: 70px;
+  }
+.banner-title p{
+    font-family: 'Montserrat', sans-serif;
+    color: #555454;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  .banner-play-store{
+    padding-top: 23px;
+    display: flex;
+  }
+  .store-item-details{
+    display: flex;
+    border: 1px solid red;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    padding-right: 35px;
+    border-radius: 0 25px;
+    border:  1px solid transparent;
+    background-image: linear-gradient(270deg,#ef4e4e,#e42a2a);
+    transition: all linear 0.5s;
+    margin-right: 20px;
+    
+  }
+  .store-item-details:hover{
+    box-shadow: none;
+    color: white;
+    box-shadow: 2px 1000px 1px #fee2e2 inset;
+  }
+  .store-item-details:hover i{
+    color: #1e1e1e;
+  }
+  .store-item-details:hover p{
+    color: #555454;
+  }
+  .store-item-details:hover p span{
+    color: #555454;
+  }
+  .store-item-details i{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin-right: 10px;
+    color: #fff;
+    transition: all linear 0.5s;
+  }
+  .store-item-details .apple{
+    font-size: 35px
+  }
+  .store-item-details p{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    transition: all linear 0.5s;
+  }
+  .store-item-details p span{
+    display: block;
+    margin-top: 2px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    transition: all linear 0.5s;
+  }
+  /* .store-item a{
+    
+  }
+  .store-item a img{
+    font-family: 'Montserrat', sans-serif;
+      border-radius: 0 25px;
+      padding: 10px 30px;
+      font-size: 16px;
+      border:  1px solid transparent;
+      background-image: linear-gradient(270deg,#ef4e4e,#e42a2a);
+      box-shadow: 2px 1000px 1px #fee2e2 inset;
+      color: #000;
+      transition: all linear 0.5s;
+      width: 70%;
+  }
+  .store-item a img:hover{
+    box-shadow: none;
+    color: white;
+  } */
+  .app {
+    padding-right: 20px;
+  }
+  .app img{
+    background: #000000;
+    border-radius: 15px;
+  }
+  .main-img img{
+    /* background: #e3f5f6; */
+    height: 450px;
+    width: 80%;
+    margin-left: 80px;
+  }
+/* BANNER CSS END */
+
+/* ABOUT CSS START */
+#about-part{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.about-item {
+    background: #fff;
+    border-radius: 20px;
+  }
+  .about-item img {
+    width: 100%;
+    border-radius: 20px;
+  }
+  .about-text{
+      padding: 40px 10px;
+      text-align: center;
+  }
+.about-text h3 {
+    font-family: 'Yeseva One', cursive;
+    color: #0d052e;
+    font-size: 18px;
+    color: #151515;
+    font-weight: 600;
+    line-height: 24px;
+  }
+  .about-text p {
+    font-family: 'Montserrat', sans-serif;
+    color: #363535;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 500;
+    padding-top: 10px;
+  }
+  .certificate{
+    padding-top: 80px;
+  }
+  /* .iso-part {
+    padding-top: 70px;
+  } */
+  .certificate-main{
+    display: flex;
+    align-items: center;
+  }
+  .iso-details h4 {
+    font-family: 'Yeseva One', cursive;
+    color: #0d052e;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+    padding-bottom: 25px;
+  }
+  .iso-details p {
+    font-family: 'Montserrat', sans-serif;
+    color: #363535;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+/* ABOUT CSS END */
+/* SUCCESS COUNTER CSS START */
+#success-part{
+  padding: 100px 0;
+}
+
+#success-part .success-details .title h2{
+  width: 500px;
+  font-family: 'Yeseva One', cursive;
+  font-size: 30px;
+  color: #0d052e;
+  font-weight: 600;
+  line-height: 36px
+}
+
+#success-part .success-details p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  color: #363535;
+  font-weight: 400;
+  line-height: 24px;
+  padding-top: 20px;
+}
+
+#success-part .success-details .title h2 span{
+  position: relative;
+  color: #d84646;
+}
+
+#success-part .success-details .title h2 span::after{
+  width: 100%;
+  height: 2px;
+  background: #f4898a;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+}
+
+#success-part .success-details .count-part{
+  margin-top: 46px;
+}
+
+#success-part .success-details .count-part .left-count h2{
+  font-size: 35px;
+  font-weight: 700;
+  font-family: 'Yeseva One', cursive;
+  color: #07cab2;
+}
+
+#success-part .success-details .count-part .left-count h6{
+  margin-top: 10px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  color: #143f6b;
+  line-height: 20px;
+}
+
+#success-part .success-details .count-part .middle-count h2{
+  font-size: 35px;
+  font-weight: 700;
+  font-family: 'Yeseva One', cursive;
+  color: #fe6f0a;
+}
+
+#success-part .success-details .count-part .middle-count h6{
+  margin-top: 10px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  color: #143f6b;
+  line-height: 20px;
+}
+
+#success-part .success-details .count-part .right-count h2{
+  font-size: 35px;
+  font-weight: 700;
+  font-family: 'Yeseva One', cursive;
+  color: #6a4af4;
+}
+
+#success-part .success-details .count-part .right-count h6{
+  margin-top: 10px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  color: #143f6b;
+  line-height: 20px;
+}
+#success-part .success-details .count-part .end-count h2{
+  font-size: 35px;
+  font-weight: 700;
+  font-family: 'Yeseva One', cursive;
+  color: #fd21c6;
+}
+
+#success-part .success-details .count-part .end-count h6{
+  margin-top: 15px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  color: #143f6b;
+  line-height: 20px;
+}
+
+#success-part .success-details .success-button{
+  margin-top: 45px;
+}
+
+#success-part .success-details .success-button .button{
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 0 25px;
+  padding: 25px 40px;
+  font-size: 17px;
+  border:  1px solid transparent;
+  background-image: linear-gradient(270deg,#ef4e4e,#e42a2a);
+  transition: all linear 0.5s;
+  color: #fff;
+  font-weight: 600;
+      
+}
+#success-part .success-details .success-button .button:hover{
+  box-shadow: none;
+  color: #000;
+  font-weight: 600;
+  box-shadow: 2px 1000px 1px #fee2e2 inset;
+}
+/* SUCCESS COUNTER CSS END */
+/* HOW TO USE CSS START */
+#how-to-use-part {
+    margin-top:100px ;
+    margin-bottom:100px ;
+    /* position: relative; */
+}
+
+
+/* #how-to-use-part .title{
+    text-align: center;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+
+#how-to-use-part .title h1 {
+	width: 660px;
+	margin: 0 auto;
+} */
+
+
+/* #how-to-use-part .title .round-shape {
+	position: absolute;
+	top: 220px;
+	right: -116px;
+    text-align: right;
+    z-index: -1;
+}
+
+
+#how-to-use-part .title .round-shape img {
+	width: 52%;
+} */
+
+
+#how-to-use-part .item{
+background: rgba(255, 255, 255, .5);
+padding: 37px;
+border-radius: 20px;
+transition: .4s;
+margin-top: 20px;
+}
+
+
+#how-to-use-part .item:hover{
+    background: #ffffff;
+    -webkit-box-shadow: 0px 0px 26px -3px rgba(0,0,0,0.22);
+-moz-box-shadow: 0px 0px 26px -3px rgba(0,0,0,0.22);
+box-shadow: 0px 0px 26px -3px rgba(0,0,0,0.22);
+}
+
+
+#how-to-use-part .item .img .img-one{
+box-shadow: 0px 17px 26px -2px rgba(203,238,248,1);
+width: 100% !important;
+    border-radius: 10px;
+}
+
+
+#how-to-use-part .item .img .img-two{
+box-shadow: 0px 17px 26px -2px rgba(254,231,245,1);
+width: 100% !important;
+    border-radius: 10px;
+}
+
+
+#how-to-use-part .item .img .img-three{
+box-shadow: 0px 17px 26px -2px rgba(215,236,229,1);
+width: 100% !important;
+    border-radius: 10px;
+}
+
+
+#how-to-use-part .item .img .img-four{
+box-shadow: 0px 17px 26px -2px rgba(235,216,228,1);
+width: 100% !important;
+    border-radius: 10px;
+}
+        
+
+#how-to-use-part .item .img .img-five{
+box-shadow: 0px 17px 26px -2px rgba(239,234,219,1);
+width: 100% !important;
+    border-radius: 10px;
+}
+
+
+#how-to-use-part .item .img .img-six{
+box-shadow: 0px 17px 26px -2px rgba(248,212,217,1);
+width: 100% !important;
+    border-radius: 10px;
+}
+
+
+#how-to-use-part .item h4{
+    font-size: 20px;
+    font-weight: 800;
+    color: #143f6b;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-family: 'Yeseva One', cursive;
+    color: #0d052e;
+}
+
+
+#how-to-use-part .item p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #777777;
+    margin-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: #363535;
+}
+
+#how-to-use-part .item .item-button a{
+    color:#777777 ;
+    position: relative;
+}
+
+
+#how-to-use-part .item .item-button a i{
+    position: absolute;
+    right: -25px;
+}
+/* HOW TO USE CSS END */
+
+/* CHOOSE CSS START */
+#choose-part{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.choose-left-item{
+  padding-bottom: 20px;
+}
+.choose-right-item{
+  padding-bottom: 20px;
+}
+.choose-icon {
+  text-align: right;
+}
+.choose-left-text {
+  text-align: right;
+}
+.choose-icon img {
+  padding-top: 30px;
+}
+.choose-left-text h4 {
+  font-family: 'Yeseva One', cursive;
+  color: #0d052e;
+  font-size: 24px;
+  padding-top: 8px;
+  padding-bottom: 14px;
+}
+.choose-left-text p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+.choose-right-icon img {
+  padding-top: 30px;
+}
+.choose-right-text h4 {
+  font-family: 'Yeseva One', cursive;
+  color: #0d052e;
+  font-size: 24px;
+  padding-top: 8px;
+  padding-bottom: 14px;
+}
+.choose-right-text p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+.choose-photo {
+  margin-top: 25px;
+  margin-left: -16px;
+}
+
+/* CHOOSE CSS END */
+
+/* REVIEW CSS START */
+#review-part{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  /* position: relative; */
+}
+/* 
+#review-part .title .round-shape {
+position: absolute;
+top: 15px;
+left: -116px;
+  text-align: left;
+} */
+
+/* #review-part .title .round-shape img {
+width: 52%;
+} */
+
+#review-part .review-slider .slider-box{
+  background: #ffffff;
+  padding: 50px 20px;
+  border-radius: 20px;
+}
+#review-part .review-slider-main{
+  display: flex;
+  align-items: center;
+}
+
+#review-part .review-slider .box{
+  /* opacity: .4; */
+}
+
+#review-part .review-slider .slider-box .review-details{
+  display: flex;
+}
+
+#review-part .review-slider .slider-box .review-details .img img{
+  box-shadow: 0px 0px 26px -3px rgba(0,0,0,0.22);
+  border-radius: 50%;
+}
+
+#review-part .review-slider .slider-box .review-details .name{
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+#review-part .review-slider .slider-box .review-details .name h4{
+  font-family: 'Yeseva One', cursive;
+  color: #0d052e;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+#review-part .review-slider .slider-box .review-details .name h6{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #777777;
+}
+
+#review-part .review-slider .slider-box p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #363535;
+  padding: 0 12px;
+  text-align: justify;
+  margin-top: 30px;
+  line-height:24px;
+}
+
+#review-part .review-slider .slider-box .icon{
+  margin-left: 12px;
+  margin-top: 30px;
+}
+
+#review-part .review-slider .slider-box .icon i{
+  font-size: 18px;
+  color: #ffa233;
+}  
+
+ #review-part .prev{
+  width: 48px;
+  height: 48px;
+  background: #ffffff;
+  border: 1px solid #143f6b;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 48px;
+  font-size: 20px;
+  transition: .4s;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: -80px;
+}
+
+#review-part .prev:hover{
+  background: #ff595a;
+  color: #fff;
+  border:1px solid #ff595a;
+}
+
+#review-part .next{
+  width: 48px;
+  height: 48px;
+  background: #ffffff;
+  border: 1px solid #143f6b;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 48px;
+  font-size: 20px;
+  transition: .4s;
+  cursor: pointer;
+  position: absolute;
+  top: 32%;
+  left: -80px;
+}
+
+#review-part .next:hover{
+  background: #ff595a;
+  color: #fff;
+  border:1px solid #ff595a;
+}
+/*
+
+#review-part .services-img {
+  position: relative;
+}
+
+#review-part .services-img .dot-shape {
+position: absolute;
+bottom: -20px;
+right: 58px;
+}
+
+#review-part .shape-two{
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+  z-index: -1;
+}
+
+#review-part .shape-two img{
+  width: 80%;
+} */
+/* REVIEW CSS END */
+
+/* Training CSS START */
+#training-part{
+  padding: 100px 0;
+}
+#training-part .training-item{
+  padding: 20px 30px;
+  border: 1px solid rgb(213, 147, 147);
+  border-radius: 20px;
+  text-align: center;
+  height: 100%;
+}
+
+#training-part .training-item .training-name h4{
+  font-family: 'Yeseva One', cursive;
+  font-size: 16px;
+  color: #1f1e1e;
+  font-weight: 600;
+  padding-top: 21px;
+  line-height: 24px;
+}
+/* Training CSS END */
+/* TEAM CSS START */
+#team-part{
+  padding: 100px 0;
+}
+.team-item{
+  padding: 30px 10px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, .5);
+  text-align:center;
+}
+.team-text{
+  padding: 25px 0px;
+}
+.team-text h4{
+  font-family: 'Yeseva One', cursive;
+  color: #0d052e;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  padding-bottom: 15px;
+}
+.team-text p{
+  font-family: 'Montserrat', sans-serif;
+  color: #363535;
+  font-size: 17px;
+  font-weight: 400;
+}
+.team-icon{
+  text-align:center
+}
+.team-icon img{
+  width: 35px;
+  margin-right: 6px;
+  transition: all linear 0.5s;
+}
+.team-icon img:hover{
+  transform: translateY(-30%)
+}
+/* TEAM CSS END */
+/* FOOTER CSS START */
+#footer-part{
+  padding: 100px 0;
+}
+
+#footer-part .footer-contain-bg{
+  background: rgba(255, 255, 255, .4);
+  padding: 80px 95px 0px 95px ;
+  border-radius: 20px;
+}
+
+#footer-part .main-item{
+  padding-bottom: 55px;
+  position: relative;
+}
+
+#footer-part .main-item::after {
+width: 100%;
+height: 2px;
+background: rgba(255, 98, 98, 0.5);
+position: absolute;
+bottom: 0px;
+left: 0px;
+content: "";
+}
+
+#footer-part .left-item{
+  margin-top: 5px;
+}
+#footer-part .left-item img{
+  width: 180px;
+}
+#footer-part .left-item p{
+  font-family: 'Montserrat', sans-serif;
+  color: #777777;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 40px;
+}
+
+#footer-part .middle-item{
+  padding-left: 30px;
+}
+
+#footer-part .middle-item h3{
+  font-family: 'Yeseva One', cursive;
+  font-size: 20px;
+  color: #0d052e;
+  font-weight: 800;
+}
+
+#footer-part .middle-item ul{
+  padding-left: 0;
+  margin-top: 40px;
+}
+
+#footer-part .middle-item ul li i{
+  color: #f07979;
+}
+
+#footer-part .middle-item ul li{
+  font-family: 'Montserrat', sans-serif;
+  color: #777777;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+#footer-part .right-item h3{
+  font-family: 'Yeseva One', cursive;
+  font-size: 20px;
+  color: #0d052e;
+  font-weight: 800;
+}
+
+#footer-part .right-item address{
+  margin-top: 40px;
+}
+
+#footer-part .right-item address figure{
+  font-family: 'Montserrat', sans-serif;
+  color: #777777;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#footer-part .copy-right{
+  padding: 30px 0;
+}
+
+#footer-part .copy-right .main{
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer-part .copy-right .main p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #777777;
+  display: flex;
+  align-items: center;
+}
+
+#footer-part .copy-right .main .icon img{
+  width: 40px;
+  margin-left: 20px;
+}
+
+.top-button{
+  position:fixed;
+  bottom: 108px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  color:#FFFFFF ;
+  background: #ef4e4e;
+  border-radius: 40px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+/* FOOTER CSS END */
+#screenshot{
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+#screenshot .header{
+  margin-bottom: 20px;
+}
+.screen-slider{
+  position: relative;
+}
+.screenshot-frame {
+  background-image: url(../images/iphone-x-frame.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 290px;
+  height: 605px;
+  position: absolute;
+  top: 46px;
+  left: calc(50% + 0.5px);
+  z-index: 2;
+  border-radius: 40px;
+  display: block;
+  transform: translateX(-50%);
+}
+.screen-main img {
+  /* padding-left: 39px; */
+  height: 593px !important;
+  width: 70% !important;
+  display: block !important;
+  margin-top: 27px;
+  margin-left: 68px;
+  /* transform: scale(.7);
+  transition: 0.3s;
+  border: 1px solid #ddd; */
+  border-radius: 40px;
+}
+
+
+  /* transform: scale(.85); */
